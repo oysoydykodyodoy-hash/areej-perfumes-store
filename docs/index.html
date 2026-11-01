@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>أريج | متجر العطور الفاخرة</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <span>✨ توصيل مجاني للطلبات الأكبر من 350 ر.س + عينات مجانية مع كل طلب</span>
+      <button id="themeToggle" class="theme-toggle-btn" aria-label="تغيير المظهر">
+        <svg class="sun-icon" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="#" class="brand-logo">
+        <span class="logo-symbol">❖</span>
+        <span class="logo-text">أريج <small>للعطور الفاخرة</small></span>
+      </a>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="#hero" class="nav-link active">الرئيسية</a>
+        <a href="#catalog" class="nav-link">المجموعات</a>
+        <a href="#quiz" class="nav-link">مستشار العطور</a>
+        <a href="#about" class="nav-link">قصتنا</a>
+        <a href="#contact" class="nav-link">تواصل معنا</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="cartBtn" class="cart-trigger-btn" aria-label="سلة المشتريات">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+          <span class="cart-badge" id="cartBadge">0</span>
+        </button>
+        <button id="menuToggle" class="mobile-menu-btn" aria-label="القائمة">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="hero-bg-overlay"></div>
+      <div class="container hero-content">
+        <span class="hero-tag">مجموعة 2025 الحصرية</span>
+        <h1 class="hero-title">عطور تجسد الأناقة والرفاهية الشرقية</h1>
+        <p class="hero-subtitle">استكشف تشكيلة استثنائية مصممة من أندر المكونات الطبيعية والزيوت العطرية النادرة لترك انطباع لا ينسى.</p>
+        <div class="hero-cta-group">
+          <a href="#catalog" class="btn btn-primary">تسوق المجموعة الآن</a>
+          <a href="#quiz" class="btn btn-outline">اكتشف عطرك المفضل</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Value Props -->
+    <section class="features-bar">
+      <div class="container features-grid">
+        <div class="feature-item">
+          <div class="feature-icon">💎</div>
+          <div>
+            <h4>زيوت عطرية 100% نقية</h4>
+            <p>تركيزات عالية وثبات يدوم طويلاً</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">🚚</div>
+          <div>
+            <h4>شحن سريع وآمن</h4>
+            <p>توصيل لجميع المناطق خلال 48 ساعة</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">🎁</div>
+          <div>
+            <h4>تغليف فاخر للهدايا</h4>
+            <p>علب مخملية مصممة خصيصاً للمناسبات</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">✨</div>
+          <div>
+            <h4>ضمان السترجاع الذهبي</h4>
+            <p>تجربة العينة المجانية قبل فتح العبوة</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Catalog Section -->
+    <section id="catalog" class="catalog-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">تشكيلتنا المختارة</span>
+          <h2 class="section-title">العطور الأكثر مبيعاً وأناقة</h2>
+        </div>
+
+        <!-- Search & Filter Controls -->
+        <div class="catalog-controls">
+          <div class="search-box">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            <input type="text" id="searchInput" placeholder="ابحث عن اسم العطر أو المكون (عود، فانيليا، مسك...)" />
+          </div>
+
+          <div class="category-tabs" id="categoryTabs">
+            <button class="tab-btn active" data-cat="all">الكل</button>
+            <button class="tab-btn" data-cat="women">نسائي</button>
+            <button class="tab-btn" data-cat="men">رجالي</button>
+            <button class="tab-btn" data-cat="unisex">للجنسين</button>
+            <button class="tab-btn" data-cat="oriental">العود والشرقيات</button>
+          </div>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="products-grid" id="productsGrid">
+          <!-- Populated dynamically via app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Perfume Finder Quiz -->
+    <section id="quiz" class="quiz-section">
+      <div class="container">
+        <div class="quiz-card">
+          <div class="quiz-header">
+            <span class="badge-gold">مستشار العطور الذكي</span>
+            <h2>احصل على توصية مخصصة لشخصيتك</h2>
+            <p>أجب عن سؤالين رئيسيين لنقترح عليك العطر الأنسب لذوقك والمناسبة</p>
+          </div>
+
+          <form id="quizForm" class="quiz-body">
+            <div class="quiz-step">
+              <label class="quiz-label">1. ما هي طابع العطور الذي تفضله؟</label>
+              <div class="quiz-options">
+                <label class="quiz-opt">
+                  <input type="radio" name="preference" value="oriental" checked>
+                  <span>🪵 دافئ وشرقي (عود، بخور، عنبر)</span>
+                </label>
+                <label class="quiz-opt">
+                  <input type="radio" name="preference" value="floral">
+                  <span>🌸 زهري ورقيق (ياقوت، ورد، جاسمين)</span>
+                </label>
+                <label class="quiz-opt">
+                  <input type="radio" name="preference" value="fresh">
+                  <span>🍋 منعش وحمضي (برغموت، فواكه، بحري)</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="quiz-step">
+              <label class="quiz-label">2. ما هي المناسبة الرئيسية لاستخدامه؟</label>
+              <div class="quiz-options">
+                <label class="quiz-opt">
+                  <input type="radio" name="occasion" value="daily" checked>
+                  <span>☀️ الاستخدام اليومي والعمل</span>
+                </label>
+                <label class="quiz-opt">
+                  <input type="radio" name="occasion" value="evening">
+                  <span>🌙 المناسبات والسهرات الخاصة</span>
+                </label>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">عرض العطر المقترح ✨</button>
+          </form>
+
+          <div id="quizResult" class="quiz-result hidden">
+            <!-- Quiz Result inserted here -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Brand Story Section -->
+    <section id="about" class="story-section">
+      <div class="container story-grid">
+        <div class="story-content">
+          <span class="section-subtitle">شغف بصناعة العبير</span>
+          <h2 class="section-title">فلسفة أريج في عالم العطور</h2>
+          <p>في "أريج"، نؤمن بأن العطر ليس مجرد رائحة زكية، بل هو هوية غير مرئية وتوقيع شخصي يرافق خاطرك وذكرياتك. ندمج بين أسرار العطارة العربية القديمة وتقنيات التقطير الفرنسية الحديثة لنبتكر مزيجاً نادراً يفوح بالفخامة والأناقة.</p>
+          <div class="story-stats">
+            <div class="stat-box">
+              <span class="stat-number">+100%</span>
+              <span class="stat-label">مكونات طبيعية</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-number">12+</span>
+              <span class="stat-label">ساعة ثبات عالي</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-number">+50k</span>
+              <span class="stat-label">عميل سعيد</span>
+            </div>
+          </div>
+        </div>
+        <div class="story-card-visual">
+          <div class="visual-inner">
+            <div class="perfume-bottle-icon">🏛️</div>
+            <h3>خلطات حصرية بلمسة من العود الصافي والعنبر المعتق</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Order Support -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="contact-card">
+          <div class="contact-info">
+            <h2>هل تحتاج لمساعدة في اختيار عطرك؟</h2>
+            <p>خوبراؤنا في خدمتكم لمساعدتكم في اختيار الهدايا العطرية وتنسيق الطلبات الخاصة.</p>
+            <div class="contact-details">
+              <div class="c-detail">
+                <span class="c-icon">📱</span>
+                <div>
+                  <strong>واتساب وتواصل سريع:</strong>
+                  <p dir="ltr">+966 50 123 4567</p>
+                </div>
+              </div>
+              <div class="c-detail">
+                <span class="c-icon">📍</span>
+                <div>
+                  <strong>معرضنا الرئيسي:</strong>
+                  <p>الرياض، شارع العليا - برج الأريج</p>
+                </div>
+              </div>
+              <div class="c-detail">
+                <span class="c-icon">✉️</span>
+                <div>
+                  <strong>البريد الإلكتروني:</strong>
+                  <p>care@areej-perfumes.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <form id="contactForm" class="contact-form">
+            <h3>أرسل لنا استفسارك</h3>
+            <div class="form-group">
+              <label for="cName">الاسم الكريم</label>
+              <input type="text" id="cName" required placeholder="أدخل اسمك الكامل">
+            </div>
+            <div class="form-group">
+              <label for="cPhone">رقم الجوال / الواتساب</label>
+              <input type="tel" id="cPhone" required placeholder="05XXXXXXXX">
+            </div>
+            <div class="form-group">
+              <label for="cMessage">رسالتك أو العطر المطلوب</label>
+              <textarea id="cMessage" rows="3" required placeholder="اكتب استفسارك هنا..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">إرسال الرسالة</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <span class="logo-text">أريج <small>للعطور الفاخرة</small></span>
+        <p>عنوان الأناقة والجودة العالية في عالم العطور الشرقية والغربية.</p>
+      </div>
+      <div class="footer-links">
+        <h4>روابط سريعة</h4>
+        <ul>
+          <li><a href="#hero">الرئيسية</a></li>
+          <li><a href="#catalog">المجموعات</a></li>
+          <li><a href="#quiz">مستشار العطور</a></li>
+          <li><a href="#about">عن المتجر</a></li>
+        </ul>
+      </div>
+      <div class="footer-newsletter">
+        <h4>النشرة العطرية</h4>
+        <p>اشترك للحصول على خصومات حصرية وتنبيهات بالإصدارات الجديدة.</p>
+        <form id="newsletterForm" class="newsletter-form">
+          <input type="email" placeholder="بريدك الإلكتروني" required>
+          <button type="submit" class="btn btn-secondary">اشتراك</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© <span id="year"></span> متجر أريج للعطور. جميع الحقوق محفوظة.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Slide-out Cart Drawer -->
+  <div id="cartDrawer" class="cart-drawer">
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+    <div class="drawer-panel">
+      <div class="drawer-header">
+        <h3>سلة المشتريات (<span id="cartCountHeader">0</span>)</h3>
+        <button id="closeCart" class="close-btn" aria-label="إغلاق">&times;</button>
+      </div>
+      <div class="drawer-body" id="cartItemsList">
+        <!-- Cart Items inserted dynamically -->
+      </div>
+      <div class="drawer-footer">
+        <div class="summary-line">
+          <span>المجموع الكلي:</span>
+          <span class="total-price" id="cartTotal">0 ر.س</span>
+        </div>
+        <p class="shipping-note">الضرائب والتوصيل تحسب عند إتمام الطلب</p>
+        <button id="whatsappCheckoutBtn" class="btn btn-whatsapp btn-block">
+          💬 إتمام الطلب عبر الواتساب Direct
+        </button>
+        <button id="clearCartBtn" class="btn-text btn-block">تفريغ السلة</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Quick View Modal -->
+  <div id="quickModal" class="modal">
+    <div class="modal-overlay" id="modalOverlay"></div>
+    <div class="modal-content">
+      <button id="closeModal" class="close-btn">&times;</button>
+      <div id="modalBody" class="modal-body-content">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast-notification"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
